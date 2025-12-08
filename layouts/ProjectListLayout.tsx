@@ -45,7 +45,7 @@ export default function ProjectListLayout({
   return (
     <section className="x-auto max-w-5xl px-4 py-8">
       <h1 className="mb-8 text-3xl font-extrabold">{title}</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
+      <div className="gap-x-8·gap-y-12·md:grid-cols-3 grid grid-cols-1">
         {projects.map((project) => (
           <ProjectCard key={project.slug} {...project} />
         ))}
