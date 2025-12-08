@@ -1,11 +1,14 @@
 ---
-title: Sample .md file
-date: '2025-03-08'
-tags: ['markdown', 'code', 'features']
+title: My Test File
+date: 2025-03-08
+tags:
+  - markdown
+  - code
+  - features
+  - pork
 draft: false
-summary: Example of a markdown file with code blocks and syntax highlighting
+summary: Don't be lazy yuh bum!
 ---
-
 A sample post with markdown.
 
 ## Inline Highlighting
@@ -36,3 +39,5 @@ def fib():
 for index, fibonacci_number in zip(range(10), fib()):
      print('{i:3}: {f:3}'.format(i=index, f=fibonacci_number))
 ```
+
+> A famous man once said something
