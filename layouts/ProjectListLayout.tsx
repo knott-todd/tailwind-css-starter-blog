@@ -10,20 +10,35 @@ interface ProjectCardProps {
 
 function ProjectCard({ title, summary, featureImage, slug }: ProjectCardProps) {
   return (
-    <div className="overflow-hidden rounded-lg border bg-white shadow transition-shadow hover:shadow-lg dark:bg-gray-900">
-      <Link href={`/projects/${slug}`}>
-        <Image
-          src={featureImage}
-          alt={title}
-          width={600}
-          height={340}
-          className="h-48 w-full object-cover"
-        />
-        <div className="p-4">
-          <h3 className="mb-2 text-xl font-bold">{title}</h3>
-          <p className="text-gray-700 dark:text-gray-300">{summary}</p>
+    <div className="flex h-full flex-col">
+      <div className={`${featureImage && 'h-full'} overflow-hidden rounded-md border-2 border-gray-200/60 dark:border-gray-700/60 flex flex-col h-full`}> 
+        {featureImage && (
+          <Link href={`/projects/${slug}`} aria-label={`Link to ${title}`}>
+            <Image
+              alt={title}
+              src={featureImage}
+              className="object-cover object-center w-full md:h-36 lg:h-48"
+              width={544}
+              height={306}
+            />
+          </Link>
+        )}
+        <div className="flex flex-col flex-1 p-6">
+          <h3 className="mb-3 text-2xl leading-8 font-bold tracking-tight">
+            <Link href={`/projects/${slug}`} aria-label={`Link to ${title}`}>
+              {title}
+            </Link>
+          </h3>
+          <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400 flex-1">{summary}</p>
+          <Link
+            href={`/projects/${slug}`}
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-base leading-6 font-medium mt-auto"
+            aria-label={`Link to ${title}`}
+          >
+            Learn more &rarr;
+          </Link>
         </div>
-      </Link>
+      </div>
     </div>
   )
 }
@@ -45,7 +60,7 @@ export default function ProjectListLayout({
   return (
     <section className="x-auto max-w-5xl px-4 py-8">
       <h1 className="mb-8 text-3xl font-extrabold">{title}</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
         {projects.map((project) => (
           <ProjectCard key={project.slug} {...project} />
         ))}

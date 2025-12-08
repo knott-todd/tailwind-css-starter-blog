@@ -1,5 +1,5 @@
 ---
-title: 'Example Project'
+title: 'Example Project 2'
 date: '2025-12-07'
 summary: 'This is a sample project to demonstrate the new Project post type with a featured image.'
 featureImage: '/static/images/google.png'
