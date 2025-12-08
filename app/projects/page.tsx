@@ -9,7 +9,7 @@ export const metadata = genPageMetadata({ title: 'Projects' })
 export default function Projects() {
   const projects = allCoreContent(allProjects).map((project) => ({
     title: project.title,
-    summary: project.summary,
+    summary: project.summary ?? '',
     featureImage: project.featureImage,
     slug: project.slug,
   }))
