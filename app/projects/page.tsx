@@ -1,4 +1,3 @@
-
 import { allCoreContent } from 'pliny/utils/contentlayer'
 import { allProjects } from 'contentlayer/generated'
 import ProjectListLayout from '@/layouts/ProjectListLayout'

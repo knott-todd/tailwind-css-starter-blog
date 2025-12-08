@@ -2,7 +2,7 @@
 title: 'Example Project'
 date: '2025-12-07'
 summary: 'This is a sample project to demonstrate the new Project post type with a featured image.'
-featureImage: '/static/images/example-project.jpg'
+featureImage: '/static/images/google.png'
 tags: ['demo', 'project']
 authors: ['default']
 draft: false
