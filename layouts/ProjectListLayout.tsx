@@ -11,28 +11,30 @@ interface ProjectCardProps {
 function ProjectCard({ title, summary, featureImage, slug }: ProjectCardProps) {
   return (
     <div className="flex h-full flex-col">
-      <div className={`${featureImage && 'h-full'} overflow-hidden rounded-md border-2 border-gray-200/60 dark:border-gray-700/60 flex flex-col h-full`}> 
+      <div
+        className={`${featureImage && 'h-full'} flex h-full flex-col overflow-hidden rounded-md border-2 border-gray-200/60 dark:border-gray-700/60`}
+      >
         {featureImage && (
           <Link href={`/projects/${slug}`} aria-label={`Link to ${title}`}>
             <Image
               alt={title}
               src={featureImage}
-              className="object-cover object-center w-full md:h-36 lg:h-48"
+              className="w-full object-cover object-center md:h-36 lg:h-48"
               width={544}
               height={306}
             />
           </Link>
         )}
-        <div className="flex flex-col flex-1 p-6">
+        <div className="flex flex-1 flex-col p-6">
           <h3 className="mb-3 text-2xl leading-8 font-bold tracking-tight">
             <Link href={`/projects/${slug}`} aria-label={`Link to ${title}`}>
               {title}
             </Link>
           </h3>
-          <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400 flex-1">{summary}</p>
+          <p className="prose mb-3 max-w-none flex-1 text-gray-500 dark:text-gray-400">{summary}</p>
           <Link
             href={`/projects/${slug}`}
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-base leading-6 font-medium mt-auto"
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 mt-auto text-base leading-6 font-medium"
             aria-label={`Link to ${title}`}
           >
             Learn more &rarr;

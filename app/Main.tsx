@@ -13,7 +13,7 @@ import FeaturedCard from '@/components/FeaturedCard'
 const MAX_DISPLAY = 5
 
 export default function Home({ posts, projects }) {
-  const latestProject = projects?.[1]
+  const latestProject = projects?.[0]
 
   return (
     <>
