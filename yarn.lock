@@ -7872,7 +7872,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^13.0.0":
+"lint-staged@npm:^13.3.0":
   version: 13.3.0
   resolution: "lint-staged@npm:13.3.0"
   dependencies:
@@ -11564,7 +11564,7 @@ __metadata:
     hast-util-from-html-isomorphic: ^2.0.0
     husky: ^9.0.0
     image-size: 2.0.1
-    lint-staged: ^13.0.0
+    lint-staged: ^13.3.0
     next: 15.2.6
     next-contentlayer2: 0.5.5
     next-themes: ^0.4.6
