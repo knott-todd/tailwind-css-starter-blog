@@ -4,23 +4,6 @@
 @source '../node_modules/pliny';
 @custom-variant dark (&:where(.dark, .dark *));
 
-@utility mask-to-b {
-  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: top;
-  -webkit-mask-size: cover;
-
-  mask-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 40%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  mask-repeat: no-repeat;
-  mask-position: top;
-  mask-size: cover;
-}
-
 /* Core theme configuration */
 @theme {
   /* Font families */
