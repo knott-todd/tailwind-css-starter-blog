@@ -13,6 +13,7 @@ content:
       - {name: authors, label: Authors, type: string, list: true}
       - {name: draft, label: Draft, type: boolean, default: true}
       - {name: summary, label: TL;DR, type: string}
+      - {name: featureImage, label: Feature Image, type: image}
       - {name: body, label: Body, type: rich-text }
 
   
