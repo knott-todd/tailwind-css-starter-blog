@@ -1,12 +1,22 @@
 import Image from './Image'
 import Link from './Link'
 
-const FeaturedCard = ({ title, description, imgSrc, href }) => (
+const FeaturedCard = ({ title, description, imgSrc, href, date, tags }) => (
   <div className="flex w-full flex-col items-center">
-    <div className="mx-auto flex min-h-[350px] w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-gray-200/60 bg-white shadow-lg md:flex-row dark:border-gray-700/60 dark:bg-gray-900">
+    <div className="mx-auto flex min-h-[450px] w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-gray-200/60 bg-white shadow-lg md:flex-row dark:border-gray-700/60 dark:bg-gray-900">
       {/* Text Section */}
-      <div className="flex w-full flex-col justify-start p-8 md:w-2/3">
-        <h2 className="mb-4 text-lg leading-tight font-bold md:text-2xl">
+      <div className="flex w-full flex-col justify-start p-8 md:w-3/5">
+        <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
+          <span className="border-primary-500 border-l-2 pl-3 font-medium text-gray-500 dark:text-gray-500">
+            {new Date(date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
+            })}
+          </span>
+        </div>
+
+        <h2 className="mb-4 text-2xl leading-tight font-medium md:text-2xl">
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
               {title}
@@ -16,7 +26,19 @@ const FeaturedCard = ({ title, description, imgSrc, href }) => (
           )}
         </h2>
 
-        <p className="prose mb-6 max-w-none text-gray-600 dark:text-gray-400">{description}</p>
+        <p className="prose max-w-none text-gray-600 dark:text-gray-300">{description}</p>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <Link
+              key={tag}
+              href={`/tags/${tag}`}
+              className="rounded-full bg-gray-800 px-3 py-1 text-xs font-medium text-gray-400 duration-150 ease-in-out hover:cursor-pointer hover:bg-gray-700 hover:text-gray-300"
+            >
+              {tag}
+            </Link>
+          ))}
+        </div>
 
         {href && (
           <Link

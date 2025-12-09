@@ -1,3 +1,4 @@
+import Card from '@/components/Card'
 import Image from '@/components/Image'
 import Link from '@/components/Link'
 
@@ -55,18 +56,22 @@ interface ProjectListLayoutProps {
   title?: string
 }
 
-export default function ProjectListLayout({
-  projects,
-  title = 'Projects',
-}: ProjectListLayoutProps) {
+export default function ProjectListLayout({ projects }: ProjectListLayoutProps) {
   return (
-    <section className="x-auto max-w-5xl px-4 py-8">
-      <h1 className="mb-8 text-3xl font-extrabold">{title}</h1>
-      <div className="gap-x-8·gap-y-12·md:grid-cols-3 grid grid-cols-1">
-        {projects.map((project) => (
-          <ProjectCard key={project.slug} {...project} />
-        ))}
+    <div className="gap-x-8·gap-y-12·md:grid-cols-3 grid grid-cols-1">
+      <div className="container py-12">
+        <div className="-m-4 flex flex-wrap">
+          {projects.map((d) => (
+            <Card
+              key={d.slug}
+              title={d.title}
+              description={d.summary}
+              imgSrc={d.featureImage}
+              href={`/projects/${d.slug}`}
+            />
+          ))}
+        </div>
       </div>
-    </section>
+    </div>
   )
 }

@@ -2,15 +2,14 @@ import { allCoreContent } from 'pliny/utils/contentlayer'
 import { allProjects } from 'contentlayer/generated'
 import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
+import ProjectListLayout from '@/layouts/ProjectListLayout'
 
 export const metadata = genPageMetadata({ title: 'Projects' })
 
 export default function Projects() {
-  const projects = allCoreContent(allProjects).map((project) => ({
-    title: project.title,
-    description: project.summary ?? '',
-    imgSrc: project.featureImage,
-    href: `/projects/${project.slug}`,
+  const projects = allCoreContent(allProjects).map((p) => ({
+    ...p,
+    summary: p.summary || '',
   }))
   return (
     <>
@@ -23,19 +22,7 @@ export default function Projects() {
             Check out my latest work
           </p>
         </div>
-        <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
-            {projects.map((d) => (
-              <Card
-                key={d.href}
-                title={d.title}
-                description={d.description}
-                imgSrc={d.imgSrc}
-                href={d.href}
-              />
-            ))}
-          </div>
-        </div>
+        <ProjectListLayout projects={projects} />
       </div>
     </>
   )

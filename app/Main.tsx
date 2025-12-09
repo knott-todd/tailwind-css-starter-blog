@@ -82,6 +82,8 @@ export default function Home({ posts, projects }) {
                   description={latestProject.summary}
                   imgSrc={latestProject.featureImage}
                   href={`/projects/${latestProject.slug}`}
+                  date={latestProject.date}
+                  tags={latestProject.tags}
                 />
               </motion.div>
             ) : (
