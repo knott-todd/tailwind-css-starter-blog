@@ -1,12 +1,12 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'knott\'s Blog',
+  title: "knott's Blog",
   author: 'Olusanya Todd',
-  headerTitle: 'knott\'s Blog',
+  headerTitle: "knott's Blog",
   description: 'All the cool stuff I build.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://personal-blog-mu-three.vercel.app/',
+  siteUrl: 'https://personal-blog-git-main-student-helper-team.vercel.app/',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
