@@ -15,7 +15,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   if (!project) return notFound()
   const content = coreContent(project)
   return (
-    <article className="mx-auto max-w-3xl py-8 px-4">
+    <article className="px-4·py-8 mx-auto max-w-3xl">
       <h1 className="mb-4 text-4xl font-bold">{content.title}</h1>
       <Image
         src={content.featureImage}
