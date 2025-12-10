@@ -45,7 +45,7 @@ export default function Home({ posts, projects }) {
               <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 md:text-7xl dark:text-gray-100">
                 Hey,{' '}
                 <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
-                  knott
+                  Olusanya
                 </span>{' '}
                 here.
               </h1>
@@ -95,7 +95,7 @@ export default function Home({ posts, projects }) {
         {/* You Might Like */}
         <section className="px-4 py-14">
           <h2 className="mb-8 text-4xl font-extrabold text-gray-900 md:text-5xl dark:text-gray-100">
-            You might like
+            Projects
           </h2>
           <motion.div
             initial="hidden"

@@ -3,7 +3,7 @@ import Link from './Link'
 
 const FeaturedCard = ({ title, description, imgSrc, href, date, tags }) => (
   <div className="flex w-full flex-col items-center">
-    <div className="mx-auto flex min-h-[450px] w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-gray-200/60 bg-white shadow-lg md:flex-row dark:border-gray-700/60 dark:bg-gray-900">
+    <div className="mx-auto flex min-h-[450px] w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-gray-200/60 bg-white shadow-lg transition-all duration-300 hover:shadow-xl md:flex-row dark:border-gray-700/60 dark:bg-gray-900/90 dark:hover:border-gray-700 dark:hover:bg-gray-900 dark:hover:shadow-[0_0_12px_-2px_rgba(255,255,255,0.08)]">
       {/* Text Section */}
       <div className="flex w-full flex-col justify-start p-8 md:w-3/5">
         <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
