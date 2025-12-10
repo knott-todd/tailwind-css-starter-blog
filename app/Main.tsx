@@ -24,11 +24,11 @@ export default function Home({ posts, projects }) {
           {/* subtle gradient background */}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-100/40 to-blue-200/30 opacity-40 blur-3xl dark:from-cyan-900/20 dark:to-blue-900/20" />
 
-          <div className="relative z-10 mx-auto flex max-w-5xl flex-col-reverse items-center gap-14 px-4 lg:flex-row">
+          <div className="relative z-10 mx-auto flex max-w-5xl flex-col-reverse items-center items-start gap-14 px-4 lg:flex-row">
             {/* Image Side */}
             <motion.img
               src="/static/images/me_cleanup.jpg"
-              width={260}
+              width={350}
               height={260}
               className="rounded-xl shadow-lg"
               initial={{ opacity: 0, scale: 0.85 }}
@@ -44,7 +44,8 @@ export default function Home({ posts, projects }) {
               className="text-center md:text-left"
             >
               <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 md:text-7xl dark:text-gray-100">
-                Hey,{' '}
+                Hey,
+                <br />{' '}
                 <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
                   Olusanya
                 </span>{' '}
@@ -55,7 +56,7 @@ export default function Home({ posts, projects }) {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.7 }}
-                className="mt-6 text-2xl text-gray-700 dark:text-gray-300"
+                className="mt-10 text-2xl text-gray-700 dark:text-gray-300"
               >
                 Welcome to my <FlipWords words={['blog', 'portfolio', 'makerspace']} />
               </motion.p>

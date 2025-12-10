@@ -1,14 +1,14 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: "knott's Blog",
+  title: 'Knott',
   author: 'Olusanya Todd',
-  headerTitle: "knott's Blog",
+  headerTitle: 'Knott',
   description: 'All the cool stuff I build.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://personal-blog-git-main-student-helper-team.vercel.app/',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
+  siteLogo: `${process.env.BASE_PATH || ''}/static/images/knot-logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'olusanya.nkt.todd@gmail.com',
   github: 'https://github.com/knott-todd',

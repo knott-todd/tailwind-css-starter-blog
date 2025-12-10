@@ -80,6 +80,13 @@
 }
 
 @layer utilities {
+  .smooth {
+    transition-property:
+      color, background-color, border-color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+
   .prose {
     & a {
       color: var(--color-primary-500);

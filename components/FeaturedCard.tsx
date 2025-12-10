@@ -33,7 +33,7 @@ const FeaturedCard = ({ title, description, imgSrc, href, date, tags }) => (
             <Link
               key={tag}
               href={`/tags/${tag}`}
-              className="rounded-full bg-gray-800 px-3 py-1 text-xs font-medium text-gray-400 duration-150 ease-in-out hover:cursor-pointer hover:bg-gray-700 hover:text-gray-300"
+              className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-500 duration-150 ease-in-out hover:cursor-pointer hover:bg-gray-200 hover:text-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
             >
               {tag}
             </Link>
