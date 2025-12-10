@@ -9,6 +9,7 @@ import Card from '@/components/Card'
 import ProjectListLayout from '@/layouts/ProjectListLayout'
 import { motion } from 'framer-motion'
 import FeaturedCard from '@/components/FeaturedCard'
+import FlipWords from '@/components/FlipWords'
 
 const MAX_DISPLAY = 5
 
@@ -40,7 +41,7 @@ export default function Home({ posts, projects }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center lg:text-left"
+              className="text-center md:text-left"
             >
               <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 md:text-7xl dark:text-gray-100">
                 Hey,{' '}
@@ -54,9 +55,9 @@ export default function Home({ posts, projects }) {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.7 }}
-                className="mt-4 text-2xl text-gray-700 dark:text-gray-300"
+                className="mt-6 text-2xl text-gray-700 dark:text-gray-300"
               >
-                Welcome to my blog & portfolio
+                Welcome to my <FlipWords words={['blog', 'portfolio', 'makerspace']} />
               </motion.p>
             </motion.div>
           </div>
@@ -67,7 +68,7 @@ export default function Home({ posts, projects }) {
           <h2 className="mb-2 text-4xl font-extrabold text-gray-900 md:text-5xl dark:text-gray-100">
             Latest
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400">Hot off the press!</p>
+          <p className="text-lg text-gray-600 dark:text-gray-400">Hot off the press</p>
 
           <div className="mt-10">
             {latestProject ? (
@@ -94,9 +95,11 @@ export default function Home({ posts, projects }) {
 
         {/* You Might Like */}
         <section className="px-4 py-14">
-          <h2 className="mb-8 text-4xl font-extrabold text-gray-900 md:text-5xl dark:text-gray-100">
+          <h2 className="mb-2 text-4xl font-extrabold text-gray-900 md:text-5xl dark:text-gray-100">
             Projects
           </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-400">You might also like</p>
+
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -112,9 +115,10 @@ export default function Home({ posts, projects }) {
 
         {/* Updates */}
         <section className="px-4 py-14">
-          <h2 className="mb-8 text-4xl font-extrabold text-gray-900 md:text-5xl dark:text-gray-100">
+          <h2 className="mb-2 text-4xl font-extrabold text-gray-900 md:text-5xl dark:text-gray-100">
             Updates
           </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-400">The day-to-day action</p>
 
           <ul className="divide-y divide-gray-300 dark:divide-gray-700">
             {!posts.length && 'No posts found.'}
