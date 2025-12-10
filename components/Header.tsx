@@ -1,6 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/knot-logo.png'
+import LightLogo from '@/data/knot-logo-light.png'
+import DarkLogo from '@/data/knot-logo-dark.png'
 import Image from 'next/image'
 import Link from './Link'
 import MobileNav from './MobileNav'
@@ -18,7 +19,21 @@ const Header = () => {
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <div className="flex items-center justify-between">
           <div className="mr-4">
-            <Image src={Logo} alt="Logo" width={64} height={64} className="h-12 w-12" />
+            <Image
+              src={LightLogo}
+              alt="Logo"
+              width={64}
+              height={64}
+              className="h-12 w-12 dark:hidden"
+            />
+
+            <Image
+              src={DarkLogo}
+              alt="Logo"
+              width={64}
+              height={64}
+              className="hidden h-12 w-12 dark:block"
+            />
           </div>
           {typeof siteMetadata.headerTitle === 'string' ? (
             <div className="hidden h-full text-2xl font-semibold sm:block">

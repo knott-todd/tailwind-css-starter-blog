@@ -8,7 +8,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://personal-blog-git-main-student-helper-team.vercel.app/',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/knot-logo.png`,
+  siteLogo: `${process.env.BASE_PATH || ''}/data/knot-logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'olusanya.nkt.todd@gmail.com',
   github: 'https://github.com/knott-todd',
