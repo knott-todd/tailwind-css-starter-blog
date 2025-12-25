@@ -6,8 +6,8 @@ summary: You meet ambitious, intelligent people, from across the world, with
   wildly varying perspectives. I feel challenged, and competitive, yet right at
   home.
 ---
-Firstly, Merry Christmas!  
-  
+Firstly, Merry Christmas!
+
 Let's get the obvious out of the way: you meet ambitious, intelligent people, from across the world, with wildly varying perspectives. I feel challenged, and competitive, yet right at home.
 
 ### So what?
@@ -16,7 +16,7 @@ What does it really mean, concretely, and what is the value of a broader world v
 
 ### 1\. The combination of meeting people who want to do big things (or have already started), and the access to resources of all kinds (from mentorship, to supplies, and financing) I believe, encourages me to do bigger things.
 
-I have access to 3D printers that are free to use so long as you provide filament, professors who are experts in a wide variety of fields and work with cutting edge equipment, and the all-mighty gold mine that is online shopping (AliExpress and Amazon). These things aren't impossible to find in Trinidad, and heck, may even be available within UWI—our local university. But I never had access like this before, or felt so capable.
+I have access to 3D printers that are free to use so long as you provide filament, aisles of music rooms each with it's own piano, professors who are experts in a wide variety of fields and work with cutting edge equipment, and the all-mighty gold mine that is online shopping (AliExpress and Amazon). These things aren't impossible to find in Trinidad, and heck, may even be available within UWI—our local university. But I never had access like this before, or felt so capable.
 
 Then there's the people. The high demand and idolization of western tertiary education naturally filters international students who either (for the most part) are incredibly driven and smart enough to get a scholarship, or have the monetary means. The former pushes you. I've been challenged on my political views, or rather, lack of awareness at the time, and have since grown to research, appreciate the importance of, and become concerned with global politics. I have teamed up with similarly ambitious people who want to build something—winning a Start Up pitch competition, and continuing on to develop a start up together. Idioms are idioms for a reason, they're true. And you are a product of your environment.
 
