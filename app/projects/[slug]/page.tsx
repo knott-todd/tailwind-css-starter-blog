@@ -4,6 +4,7 @@ import { MDXLayoutRenderer } from 'pliny/mdx-components'
 import { coreContent } from 'pliny/utils/contentlayer'
 import siteMetadata from '@/data/siteMetadata'
 import Image from '@/components/Image'
+import { components } from '@/components/MDXComponents'
 
 export async function generateStaticParams() {
   return allProjects.map((project) => ({ slug: project.slug }))
@@ -28,7 +29,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <span>Published: {content.date}</span>
       </div>
       <div className="prose dark:prose-invert">
-        <MDXLayoutRenderer code={project.body.code} />
+        <MDXLayoutRenderer code={project.body.code} components={components} />
       </div>
     </article>
   )
