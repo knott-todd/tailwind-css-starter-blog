@@ -7,13 +7,13 @@ tags:
   - 3D-printing
 authors:
   - default
-draft: false
+draft: true
 summary: Designing a robot arm felt like the perfect crash course in kinematics
   and mechanism design—until the small details hit the printer bed. Suddenly
   every press fit, every gear tooth, every bearing pocket turned into a
   hair-pulling tolerancing nightmare.
 featureImage: /static/images/robot-arm.jpg
 ---
-# Hey Guys  
+# Hey Guys
 
 My girlfriend is really cool!
