@@ -6,6 +6,7 @@ tags:
 authors:
   - default
 draft: false
+featureImage: static/images/image-5.png
 ---
 ```markdown
 1\. Brochure  
