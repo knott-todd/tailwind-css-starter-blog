@@ -1,6 +1,10 @@
 ---
 title: ENG2003 - Communication Project Reflections
 date: 2026-04-13
+tags:
+  - Communication
+authors:
+  - default
 draft: false
 ---
 ```markdown
