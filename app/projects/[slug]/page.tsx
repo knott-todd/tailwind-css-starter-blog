@@ -47,7 +47,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </span>
         {content.tags && content.tags.length > 0 && (
           <p className="mt-1">
-            <span className="font-semibold">Lassonde competencies:</span> {content.tags.join(', ')}
+            <span className="font-semibold">Tags:</span> {content.tags.join(', ')}
           </p>
         )}
       </div>

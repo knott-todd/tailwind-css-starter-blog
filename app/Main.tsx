@@ -41,8 +41,8 @@ const contents = [
     description: 'Course and personal projects, each with a reflection.',
     children: [
       {
-        title: 'ENG 2003: Communication Project Reflections',
-        href: '/projects/2026-04-13-eng2003-communication-project-reflections',
+        title: 'ENG2003 - Communication Project Reflections',
+        href: '/projects/2026-04-22-eng2003-communication-project-reflections',
       },
       {
         title: 'Smart for What? My Vision as an Engineer (sustainability and ethics)',
