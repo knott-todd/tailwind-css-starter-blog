@@ -100,7 +100,7 @@ const community: Entry[] = [
     title: 'Peer Teacher, Mechanics of Materials and Thermodynamics',
     org: 'York University (volunteer)',
     location: 'Toronto, ON',
-    dates: 'Second year',
+    dates: 'Sep 2025 – Dec 2025',
     points: [
       'Taught myself statics, which Mechanics of Materials relied on but did not list as a prerequisite, then began teaching classmates',
       'Recorded explainer videos, set up a Discord where classmates worked through assignments together, and hosted live sessions, many of them for Thermodynamics',
@@ -131,12 +131,17 @@ const community: Entry[] = [
   },
   {
     title: 'Founder, Kids Robotics Camp',
+    location: 'Trinidad and Tobago',
     points: ['Taught 5 students (ages 12–15) to build 3 robots; 2 went on to study engineering'],
     skills: 'Teaching, robotics',
   },
   {
     title: 'Senior Dragon Boater',
-    points: ['Competed nationally for 5+ years (gold medallist) and mentored new members'],
+    org: 'Blue Bloods',
+    location: 'Trinidad and Tobago',
+    points: [
+      'Competed in regattas across Trinidad and Tobago for 5+ years (gold medallist) and mentored new members',
+    ],
     skills: 'Teamwork, mentoring, discipline',
   },
 ]
