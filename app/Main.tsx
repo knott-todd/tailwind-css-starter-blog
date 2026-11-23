@@ -39,6 +39,7 @@ const contents = [
         title: 'Community, volunteer, and extracurriculars',
         href: '/career#community',
       },
+      { title: 'Course design projects', href: '/career#course-projects' },
       { title: 'Awards and technical skills', href: '/career#awards' },
       { title: 'Resume (PDF)', href: '/static/Olusanya_Todd_Resume.pdf' },
     ],
