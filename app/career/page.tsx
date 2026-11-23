@@ -88,11 +88,11 @@ const work: Entry[] = [
 const community: Entry[] = [
   {
     title: 'Organizer and Presenter, “Shut Up, the Planet’s Burning”',
-    location: 'Toronto, ON',
+
     dates: 'Nov 2026',
     points: [
       'Hosted a climate event and presented what the research says we can do about emissions',
-      'Five people came; the group continues to meet to choose its first problem, possibly electrifying industrial heat',
+      'Five people came; the group is meeting to choose its first problem, possibly electrifying industrial heat',
     ],
     skills: 'Research, public speaking, event organizing',
   },
@@ -107,16 +107,6 @@ const community: Entry[] = [
       'This teaching became the focus of the letter that earned the Lassonde Scholarship',
     ],
     skills: 'Teaching, mentoring, communication',
-  },
-  {
-    title: 'Team Lead, RC Car',
-    org: 'MECH 2412: Mini Design Project 1, York University',
-    location: 'Toronto, ON',
-    dates: 'Jan 2026 – Apr 2026',
-    points: [
-      'Led a 6-person RC car team; designed the first drivetrain, steering, and wheel knuckle in CAD and debugged electronics',
-    ],
-    skills: 'Leadership, mechanical and electrical design, CAD',
   },
   {
     title: 'Member, YURS Rover Team',
@@ -181,6 +171,19 @@ const courses = {
     'COOP 2109: Lassonde Co-op Work-term',
   ],
 }
+
+const courseProjects: Entry[] = [
+  {
+    title: 'Team Lead, RC Car',
+    org: 'MECH 2412: Mini Design Project 1, York University',
+    location: 'Toronto, ON',
+    dates: 'Jan 2026 – Apr 2026',
+    points: [
+      'Led a 6-person RC car team; designed the first drivetrain, steering, and wheel knuckle in CAD and debugged electronics',
+    ],
+    skills: 'Leadership, mechanical and electrical design, CAD',
+  },
+]
 
 const awards = [
   '$1,500 BEST Award: 1st place in the BEST StartUp pitch competition (Bergeron Entrepreneurs in Science and Technology)',
@@ -261,6 +264,7 @@ export default function Career() {
             ['Courses', '#courses'],
             ['Work and co-op experience', '#experience'],
             ['Community, volunteer, and extracurriculars', '#community'],
+            ['Course design projects', '#course-projects'],
             ['Awards', '#awards'],
             ['Technical skills', '#skills'],
             ['Resume', '#resume'],
@@ -306,6 +310,9 @@ export default function Career() {
 
         <SectionHeading id="community">Community, volunteer, and extracurriculars</SectionHeading>
         <EntryList entries={community} />
+
+        <SectionHeading id="course-projects">Course design projects</SectionHeading>
+        <EntryList entries={courseProjects} />
 
         <SectionHeading id="awards">Awards</SectionHeading>
         <ul className="ml-5 list-disc space-y-1 text-gray-700 dark:text-gray-300">

@@ -15,6 +15,14 @@ const contents = [
     title: 'About Me',
     href: '/about',
     description: 'Who I am, what I study, and the engineer I want to become.',
+    children: [
+      { title: 'Career goals', href: '/about#career-goals' },
+      {
+        title: 'Emotional intelligence self-assessment',
+        href: '/about#emotional-intelligence-self-assessment',
+      },
+      { title: 'SMART goals for my co-op term', href: '/about#goals-for-my-co-op-term' },
+    ],
   },
   {
     title: 'Career',
@@ -41,7 +49,7 @@ const contents = [
     description: 'Course and personal projects, each with a reflection.',
     children: [
       {
-        title: 'ENG2003 - Communication Project Reflections',
+        title: 'ENG 2003: Communication Project Reflections',
         href: '/projects/2026-04-22-eng2003-communication-project-reflections',
       },
       {
@@ -69,7 +77,8 @@ export default function Home({ posts, projects }) {
           <div className="relative z-10 mx-auto flex max-w-5xl flex-col-reverse items-center items-start gap-14 px-4 lg:flex-row">
             {/* Image Side */}
             <motion.img
-              src="/static/images/me_cleanup.jpg"
+              src="/static/images/headshot-2026-hero.jpg"
+              alt="Olusanya Todd"
               width={350}
               height={260}
               className="rounded-xl shadow-lg"
