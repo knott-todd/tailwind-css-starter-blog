@@ -5,17 +5,49 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
-import Card from '@/components/Card'
-import ProjectListLayout from '@/layouts/ProjectListLayout'
 import { motion } from 'framer-motion'
-import FeaturedCard from '@/components/FeaturedCard'
 import FlipWords from '@/components/FlipWords'
 
 const MAX_DISPLAY = 5
 
-export default function Home({ posts, projects }) {
-  const latestProject = projects?.[0]
+const contents = [
+  {
+    title: 'About Me',
+    href: '/about',
+    description: 'Who I am, what I study, and the engineer I want to become.',
+  },
+  {
+    title: 'Career',
+    href: '/career',
+    description: 'My education, work and co-op experience, and resume.',
+    children: [
+      { title: 'Education: York University, Mechanical Engineering', href: '/career#education' },
+      {
+        title: 'Experience: Tesla co-op, internships, and community work',
+        href: '/career#experience',
+      },
+      { title: 'Resume (PDF)', href: '/career#resume' },
+    ],
+  },
+  {
+    title: 'Projects',
+    href: '/projects',
+    description: 'Course and personal projects, each with a reflection.',
+    children: [
+      {
+        title: 'ENG2003 Communication Project Reflections',
+        href: '/projects/2026-04-22-eng2003-communication-project-reflections',
+      },
+    ],
+  },
+  {
+    title: 'Updates',
+    href: '/blog',
+    description: 'Blog posts on what I am learning along the way.',
+  },
+]
 
+export default function Home({ posts, projects }) {
   return (
     <>
       <div className="divide-y divide-transparent">
@@ -64,54 +96,41 @@ export default function Home({ posts, projects }) {
           </div>
         </section>
 
-        {/* Latest Project */}
-        <section className="px-4 py-16">
-          <h2 className="mb-2 text-4xl font-extrabold text-gray-900 md:text-5xl dark:text-gray-100">
-            Latest
-          </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400">Hot off the press</p>
-
-          <div className="mt-10">
-            {latestProject ? (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-              >
-                <FeaturedCard
-                  title={latestProject.title}
-                  description={latestProject.summary}
-                  imgSrc={latestProject.featureImage}
-                  href={`/projects/${latestProject.slug}`}
-                  date={latestProject.date}
-                  tags={latestProject.tags}
-                />
-              </motion.div>
-            ) : (
-              <p>No projects yet.</p>
-            )}
-          </div>
-        </section>
-
-        {/* You Might Like */}
+        {/* Contents */}
         <section className="px-4 py-14">
           <h2 className="mb-2 text-4xl font-extrabold text-gray-900 md:text-5xl dark:text-gray-100">
-            Projects
+            Contents
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400">You might also like</p>
-
-          <motion.div
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            variants={{
-              hidden: { opacity: 0 },
-              show: { opacity: 1, transition: { staggerChildren: 0.15 } },
-            }}
-          >
-            <ProjectListLayout projects={projects} />
-          </motion.div>
+          <p className="text-lg text-gray-600 dark:text-gray-400">
+            My ePortfolio: who I am, where I&apos;ve worked, and what I&apos;ve built.
+          </p>
+          <ol className="mt-8 space-y-6">
+            {contents.map((section) => (
+              <li key={section.href}>
+                <Link
+                  href={section.href}
+                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-2xl font-bold"
+                >
+                  {section.title}
+                </Link>
+                <p className="mt-1 text-gray-600 dark:text-gray-400">{section.description}</p>
+                {section.children && (
+                  <ul className="mt-2 ml-5 list-disc space-y-1">
+                    {section.children.map((child) => (
+                      <li key={child.href}>
+                        <Link
+                          href={child.href}
+                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 font-medium"
+                        >
+                          {child.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ol>
         </section>
 
         {/* Updates */}

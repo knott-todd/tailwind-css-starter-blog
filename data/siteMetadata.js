@@ -11,6 +11,8 @@ const siteMetadata = {
   siteLogo: `${process.env.BASE_PATH || ''}/data/knot-logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'olusanya.nkt.todd@gmail.com',
+  // Shown in the footer of every page. Update whenever the site changes.
+  lastUpdated: 'November 22, 2026',
   github: 'https://github.com/knott-todd',
   // twitter: 'https://twitter.com/Twitter',
   linkedin: 'https://www.linkedin.com/in/olusanya-todd/',
