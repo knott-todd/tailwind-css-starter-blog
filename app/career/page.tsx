@@ -42,7 +42,7 @@ const work: Entry[] = [
     title: 'Manufacturing Software Engineering Intern (Co-op)',
     org: 'Tesla Inc., Battery Cell Manufacturing Software',
     location: 'Fremont, CA',
-    dates: 'Sep 2026 – Present',
+    dates: 'Sep 2026 – Dec 2026',
     points: [
       'Rebuilt a manufacturing quality-data pipeline across 4 Python microservices (Celery task queues, gRPC APIs, time-series data), restoring spec checks on every battery cell at 3 factories',
       'Root-caused a production bug that falsely scrapped about 4,500 battery cells by analyzing test time-series data, then shipped the fix with pytest regression tests through code review',
@@ -102,7 +102,7 @@ const community: Entry[] = [
     location: 'Toronto, ON',
     dates: 'Second year',
     points: [
-      'Self-taught statics, which Mechanics of Materials relied on but did not list as a prerequisite, then began teaching classmates',
+      'Taught myself statics, which Mechanics of Materials relied on but did not list as a prerequisite, then began teaching classmates',
       'Recorded explainer videos, set up a Discord where classmates worked through assignments together, and hosted live sessions, many of them for Thermodynamics',
       'This teaching became the focus of the letter that earned the Lassonde Scholarship',
     ],
@@ -110,11 +110,11 @@ const community: Entry[] = [
   },
   {
     title: 'Team Lead, RC Car',
-    org: 'Mini Design Course, York University',
+    org: 'MECH 2412: Mini Design Project 1, York University',
     location: 'Toronto, ON',
     dates: 'Jan 2026 – Apr 2026',
     points: [
-      'Led a 6-person RC car team; CADed the first drivetrain, steering, and wheel knuckle designs and debugged electronics',
+      'Led a 6-person RC car team; designed the first drivetrain, steering, and wheel knuckle in CAD and debugged electronics',
     ],
     skills: 'Leadership, mechanical and electrical design, CAD',
   },
@@ -179,7 +179,6 @@ const courses = {
 
 const awards = [
   '$1,500 BEST Award: 1st place in the BEST StartUp pitch competition (Bergeron Entrepreneurs in Science and Technology)',
-  'Lassonde Scholar: $15,000 renewable scholarship for academic excellence and leadership',
   'Dean’s Honour Roll, York University',
 ]
 

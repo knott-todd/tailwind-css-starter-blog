@@ -31,7 +31,7 @@ University students
 
 ## 2\. Report
 
-My main challenge was generating clear and sufficient visual representations for all the information I wanted to share. The feedback I received on my initial draft was largely that I lacked these visualizations and that I used a much too unprofessional tone in my writing. I fixed both of these, and learned about the importance of visualizations like tables, figures, and charts, as well as an impartial, academic tone in writing reports.
+My main challenge was generating clear and sufficient visual representations for all the information I wanted to share. The feedback I received on my initial draft was largely that I lacked these visualizations and that I used a much too unprofessional tone in my writing. I fixed both of these and learned about the importance of visualizations like tables, figures, and charts, as well as an impartial, academic tone in writing reports.
 
 ## 3\. Video
 
@@ -41,4 +41,4 @@ This was a group project in which we decided to communicate a topic that was not
 
 ## 4\. Project showcase
 
-During the semester, I entered an engineering project showcase competition. Here, teams of engineers would set up a demo and communicate what they built, why, and how to a roaming audience. Although my project (a voice-controlled robot arm) wasn't complete yet, I was able to assemble enough to demo how the system would work. I learned that I am able to speak well on the spot and draw a crowd. I explained in simple terms how every component worked and what should happen. I placed second, losing to the Arbalest rocket club.
+During the semester, I entered an engineering project showcase competition. Here, teams of engineers would set up a demo and communicate what they built, why, and how, to a roaming audience. Although my project (a voice-controlled robot arm) wasn't complete yet, I was able to assemble enough to demo how the system would work. I learned that I am able to speak well on the spot and draw a crowd. I explained in simple terms how every component worked and what should happen. I placed second, losing to the Arbalest rocket club.

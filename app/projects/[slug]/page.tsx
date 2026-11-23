@@ -5,6 +5,14 @@ import { coreContent } from 'pliny/utils/contentlayer'
 import siteMetadata from '@/data/siteMetadata'
 import Image from '@/components/Image'
 import { components } from '@/components/MDXComponents'
+import { genPageMetadata } from 'app/seo'
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const project = allProjects.find((p) => p.slug === slug)
+  if (!project) return {}
+  return genPageMetadata({ title: project.title, description: project.summary })
+}
 
 export async function generateStaticParams() {
   return allProjects.map((project) => ({ slug: project.slug }))

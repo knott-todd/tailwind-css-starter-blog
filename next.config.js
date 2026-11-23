@@ -81,6 +81,15 @@ module.exports = () => {
       ],
       unoptimized,
     },
+    async redirects() {
+      return [
+        {
+          source: '/projects/2026-04-22-eng2003-communication-project-reflections',
+          destination: '/projects/2026-04-13-eng2003-communication-project-reflections',
+          permanent: true,
+        },
+      ]
+    },
     async headers() {
       return [
         {

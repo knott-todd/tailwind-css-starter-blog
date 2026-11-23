@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Knott',
   author: 'Olusanya Todd',
   headerTitle: 'Knott',
-  description: 'All the cool stuff I build.',
+  description: "Olusanya Todd's ePortfolio: who I am, where I've worked, and what I've built.",
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://olusanyatodd.com',
