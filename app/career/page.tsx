@@ -26,9 +26,13 @@ const education: Entry[] = [
     ],
   },
   {
-    title: 'A-Levels',
-    org: 'Trinidad and Tobago',
-    points: ['Two-year pre-university extension of high school with advanced courses'],
+    title: 'CSEC and CAPE (Sixth Form)',
+    org: 'Queen’s Royal College',
+    location: 'Port of Spain, Trinidad and Tobago',
+    dates: 'Completed 2023',
+    points: [
+      'Caribbean Secondary Education Certificate (CSEC) and Caribbean Advanced Proficiency Examination (CAPE)',
+    ],
   },
 ]
 
@@ -138,6 +142,37 @@ const community: Entry[] = [
   },
 ]
 
+const courses = {
+  completed: [
+    'CHEM 1100',
+    'EECS 1011',
+    'EECS 1021',
+    'ENG 1101',
+    'ENG 1102',
+    'ENG 2001',
+    'ENG 2003',
+    'ENTR 3400',
+    'ENTR 3600',
+    'ESSE 1012',
+    'MATH 1025',
+    'MATH 2015',
+    'MATH 2271',
+    'MATH 2930',
+    'MECH 2201',
+    'MECH 2202',
+    'MECH 2301',
+    'MECH 2302',
+    'MECH 2401',
+    'MECH 2412',
+    'MECH 2502',
+  ],
+  transfer: ['MATH 1013', 'MATH 1014', 'PHYS 1800', 'PHYS 1801'],
+  inProgress: [
+    'COOP 2100: Professional Development for Co-op',
+    'COOP 2109: Lassonde Co-op Work-term',
+  ],
+}
+
 const awards = [
   '$1,500 BEST Award: 1st Place in BEST StartUp pitch competition',
   'Lassonde Scholar: $15,000 renewable scholarship for academic excellence and leadership',
@@ -215,6 +250,7 @@ export default function Career() {
         <nav aria-label="On this page" className="flex flex-wrap gap-4 pt-2">
           {[
             ['Education', '#education'],
+            ['Courses', '#courses'],
             ['Work and co-op experience', '#experience'],
             ['Community and extracurriculars', '#community'],
             ['Awards', '#awards'],
@@ -235,6 +271,21 @@ export default function Career() {
       <div className="pb-8">
         <SectionHeading id="education">Education</SectionHeading>
         <EntryList entries={education} />
+
+        <h3
+          id="courses"
+          className="scroll-mt-24 pt-8 pb-2 text-lg font-bold text-gray-900 dark:text-gray-100"
+        >
+          Courses completed at York University
+        </h3>
+        <p className="text-gray-700 dark:text-gray-300">{courses.completed.join(', ')}</p>
+        <p className="mt-2 text-gray-700 dark:text-gray-300">
+          <span className="font-semibold">Transfer credit:</span> {courses.transfer.join(', ')}
+        </p>
+        <p className="mt-2 text-gray-700 dark:text-gray-300">
+          <span className="font-semibold">In progress (Fall 2026):</span>{' '}
+          {courses.inProgress.join('; ')}
+        </p>
 
         <SectionHeading id="experience">Work and co-op experience</SectionHeading>
         <EntryList entries={work} />
