@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'All the cool stuff I build.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://personal-blog-git-main-student-helper-team.vercel.app/',
+  siteUrl: 'https://olusanyatodd.com',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/data/knot-logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,

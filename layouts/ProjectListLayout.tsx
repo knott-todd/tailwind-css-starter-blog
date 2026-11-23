@@ -20,7 +20,7 @@ function ProjectCard({ title, summary, featureImage, slug }: ProjectCardProps) {
             <Image
               alt={title}
               src={featureImage}
-              className="w-full object-cover object-center md:h-36 lg:h-48"
+              className="w-full object-cover object-top md:h-36 lg:h-48"
               width={544}
               height={306}
             />

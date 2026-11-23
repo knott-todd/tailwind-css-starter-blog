@@ -22,11 +22,17 @@ const contents = [
     description: 'My education, work and co-op experience, and resume.',
     children: [
       { title: 'Education: York University, Mechanical Engineering', href: '/career#education' },
+      { title: 'Courses completed', href: '/career#courses' },
       {
-        title: 'Experience: Tesla co-op, internships, and community work',
+        title: 'Work and co-op experience: Tesla, HeftIQ, and more',
         href: '/career#experience',
       },
-      { title: 'Resume (PDF)', href: '/career#resume' },
+      {
+        title: 'Community, volunteer, and extracurriculars',
+        href: '/career#community',
+      },
+      { title: 'Awards and technical skills', href: '/career#awards' },
+      { title: 'Resume (PDF)', href: '/static/Olusanya_Todd_Resume.pdf' },
     ],
   },
   {
@@ -35,8 +41,12 @@ const contents = [
     description: 'Course and personal projects, each with a reflection.',
     children: [
       {
-        title: 'ENG2003 Communication Project Reflections',
+        title: 'ENG 2003: Communication Project Reflections',
         href: '/projects/2026-04-22-eng2003-communication-project-reflections',
+      },
+      {
+        title: 'Smart for What? My Vision as an Engineer (sustainability and ethics)',
+        href: '/projects/2026-11-22-smart-for-what-my-vision-as-an-engineer',
       },
     ],
   },
@@ -90,7 +100,7 @@ export default function Home({ posts, projects }) {
                 transition={{ delay: 0.2, duration: 0.7 }}
                 className="mt-10 text-2xl text-gray-700 dark:text-gray-300"
               >
-                Welcome to my <FlipWords words={['blog', 'portfolio', 'makerspace']} />
+                Welcome to my <FlipWords words={['ePortfolio', 'blog', 'makerspace']} />
               </motion.p>
             </motion.div>
           </div>

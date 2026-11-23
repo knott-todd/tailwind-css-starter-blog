@@ -21,7 +21,8 @@ const education: Entry[] = [
     location: 'Toronto, ON',
     dates: 'Expected May 2028',
     points: [
-      'GPA: 3.9/4.0. First Class with Distinction, Dean’s Honour Roll',
+      'GPA: 3.9/4.0',
+      'First Class with Distinction; Dean’s Honour Roll',
       'Lassonde Scholar: $15,000 renewable scholarship for academic excellence and leadership',
     ],
   },
@@ -41,7 +42,7 @@ const work: Entry[] = [
     title: 'Manufacturing Software Engineering Intern (Co-op)',
     org: 'Tesla Inc., Battery Cell Manufacturing Software',
     location: 'Fremont, CA',
-    dates: 'Sep 2026 – Dec 2026',
+    dates: 'Sep 2026 – Present',
     points: [
       'Rebuilt a manufacturing quality-data pipeline across 4 Python microservices (Celery task queues, gRPC APIs, time-series data), restoring spec checks on every battery cell at 3 factories',
       'Root-caused a production bug that falsely scrapped about 4,500 battery cells by analyzing test time-series data, then shipped the fix with pytest regression tests through code review',
@@ -60,6 +61,18 @@ const work: Entry[] = [
     skills: 'Quality assurance testing, process documentation',
   },
   {
+    title: 'Mechatronics Engineer Mentee',
+    org: 'Dyer Solutions Caribbean Ltd.',
+    location: 'Remote',
+    dates: 'Jul 2021 – Aug 2024',
+    points: [
+      'Rebuilt a telepresence robot’s communications with WebRTC and demoed it to its founder, then-VP of Robotics at NVIDIA',
+      'Built a HoloLens AR app and Jetson Nano Python server (drone SDK) to fly a real drone by gaze and hand gestures',
+      'Co-authored research on distributed ML across multi-node LoRa mesh networks; presented at the UWI 5i Conference',
+    ],
+    skills: 'WebRTC, HoloLens AR, Jetson Nano, Python, LoRa mesh networks, machine learning',
+  },
+  {
     title: 'Embedded Systems Engineer (Contract)',
     org: 'Juju Festival Tech',
     location: 'Trinidad and Tobago',
@@ -70,29 +83,16 @@ const work: Entry[] = [
     ],
     skills: 'ESP32, C++, React, Node.js, electrical design',
   },
-  {
-    title: 'Mechatronics Engineer Mentee',
-    org: 'Dyer Solutions Caribbean Ltd.',
-    location: 'Remote',
-    dates: 'Jul 2021 – Aug 2024',
-    points: [
-      'Rebuilt a telepresence robot’s comms with WebRTC and demoed it to its founder, then–VP of Robotics at NVIDIA',
-      'Built a HoloLens AR app and Jetson Nano Python server (drone SDK) to fly a real drone by gaze and hand gestures',
-      'Co-authored research on distributed ML across multi-node LoRa mesh networks; presented at the UWI 5i Conference',
-    ],
-    skills: 'WebRTC, HoloLens AR, Jetson Nano, Python, LoRa mesh networks, machine learning',
-  },
 ]
 
 const community: Entry[] = [
   {
     title: 'Organizer and Presenter, “Shut Up, the Planet’s Burning”',
-    org: 'Climate action event',
     location: 'Toronto, ON',
     dates: 'Nov 2026',
     points: [
-      'Hosted a climate event and presented what the research says we can actually do about emissions',
-      'Five people came, and the group continues to meet to choose its first problem to work on, possibly electrifying industrial heat',
+      'Hosted a climate event and presented what the research says we can do about emissions',
+      'Five people came; the group continues to meet to choose its first problem, possibly electrifying industrial heat',
     ],
     skills: 'Research, public speaking, event organizing',
   },
@@ -102,9 +102,9 @@ const community: Entry[] = [
     location: 'Toronto, ON',
     dates: 'Second year',
     points: [
-      'Taught myself statics, which Mechanics of Materials relied on but did not list as a prerequisite, then started teaching my classmates',
+      'Self-taught statics, which Mechanics of Materials relied on but did not list as a prerequisite, then began teaching classmates',
       'Recorded explainer videos, set up a Discord where classmates worked through assignments together, and hosted live sessions, many of them for Thermodynamics',
-      'This teaching became the focus of the letter that earned me the Lassonde Scholarship',
+      'This teaching became the focus of the letter that earned the Lassonde Scholarship',
     ],
     skills: 'Teaching, mentoring, communication',
   },
@@ -136,7 +136,6 @@ const community: Entry[] = [
   },
   {
     title: 'Senior Dragon Boater',
-    org: 'Dragon boat racing',
     points: ['Competed nationally for 5+ years (gold medallist) and mentored new members'],
     skills: 'Teamwork, mentoring, discipline',
   },
@@ -144,37 +143,42 @@ const community: Entry[] = [
 
 const courses = {
   completed: [
-    'CHEM 1100',
-    'EECS 1011',
-    'EECS 1021',
-    'ENG 1101',
-    'ENG 1102',
-    'ENG 2001',
-    'ENG 2003',
-    'ENTR 3400',
-    'ENTR 3600',
-    'ESSE 1012',
-    'MATH 1025',
-    'MATH 2015',
-    'MATH 2271',
-    'MATH 2930',
-    'MECH 2201',
-    'MECH 2202',
-    'MECH 2301',
-    'MECH 2302',
-    'MECH 2401',
-    'MECH 2412',
-    'MECH 2502',
+    'CHEM 1100: Chemistry and Materials Science for Engineers',
+    'EECS 1011: Computational Thinking Through Mechatronics',
+    'EECS 1021: Object Oriented Programming from Sensors to Actuators',
+    'ENG 1101: Renaissance Engineer 1: Ethics, Communication and Problem Solving',
+    'ENG 1102: Renaissance Engineer 2: Engineering Design Principles',
+    'ENG 2001: Engineering Projects: Management, Economics & Safety',
+    'ENG 2003: Effective Engineering Communication',
+    'ENTR 3400: Business Essentials for Technology Entrepreneurs I',
+    'ENTR 3600: Business Essentials for Technology Entrepreneurs II',
+    'ESSE 1012: The Earth Environment',
+    'MATH 1025: Applied Linear Algebra',
+    'MATH 2015: Applied Multivariate and Vector Calculus',
+    'MATH 2271: Differential Equations for Scientists and Engineers',
+    'MATH 2930: Introduction to Probability and Statistics',
+    'MECH 2201: Thermodynamics',
+    'MECH 2202: Heat and Flow Engineering Principles',
+    'MECH 2301: Mechanics of Materials 1',
+    'MECH 2302: Dynamics',
+    'MECH 2401: Engineering Graphics & CAD Modelling',
+    'MECH 2412: Mini Design Project 1',
+    'MECH 2502: Instrumentation and Measurement Techniques',
   ],
-  transfer: ['MATH 1013', 'MATH 1014', 'PHYS 1800', 'PHYS 1801'],
+  transfer: [
+    'MATH 1013: Applied Calculus I',
+    'MATH 1014: Applied Calculus II',
+    'PHYS 1800: Engineering Mechanics',
+    'PHYS 1801: Electricity, Magnetism and Optics for Engineers',
+  ],
   inProgress: [
-    'COOP 2100: Professional Development for Co-op',
+    'COOP 2100: Professional Development for Co-op Students',
     'COOP 2109: Lassonde Co-op Work-term',
   ],
 }
 
 const awards = [
-  '$1,500 BEST Award: 1st Place in BEST StartUp pitch competition',
+  '$1,500 BEST Award: 1st place in the BEST StartUp pitch competition (Bergeron Entrepreneurs in Science and Technology)',
   'Lassonde Scholar: $15,000 renewable scholarship for academic excellence and leadership',
   'Dean’s Honour Roll, York University',
 ]
@@ -252,7 +256,7 @@ export default function Career() {
             ['Education', '#education'],
             ['Courses', '#courses'],
             ['Work and co-op experience', '#experience'],
-            ['Community and extracurriculars', '#community'],
+            ['Community, volunteer, and extracurriculars', '#community'],
             ['Awards', '#awards'],
             ['Technical skills', '#skills'],
             ['Resume', '#resume'],
@@ -278,9 +282,15 @@ export default function Career() {
         >
           Courses completed at York University
         </h3>
-        <p className="text-gray-700 dark:text-gray-300">{courses.completed.join(', ')}</p>
+        <ul className="columns-1 gap-8 text-gray-700 md:columns-2 dark:text-gray-300">
+          {courses.completed.map((c) => (
+            <li key={c} className="mb-1 break-inside-avoid">
+              {c}
+            </li>
+          ))}
+        </ul>
         <p className="mt-2 text-gray-700 dark:text-gray-300">
-          <span className="font-semibold">Transfer credit:</span> {courses.transfer.join(', ')}
+          <span className="font-semibold">Transfer credit:</span> {courses.transfer.join('; ')}
         </p>
         <p className="mt-2 text-gray-700 dark:text-gray-300">
           <span className="font-semibold">In progress (Fall 2026):</span>{' '}

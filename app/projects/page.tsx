@@ -19,7 +19,8 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Check out my latest work
+            Course and personal projects, each with a reflection and the Lassonde competencies it
+            demonstrates.
           </p>
         </div>
         <ProjectListLayout projects={projects} />
